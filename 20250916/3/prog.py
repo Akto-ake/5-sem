@@ -7,10 +7,15 @@ def sum_ch(a):
     return s
 
 a = int(input())
-b = a
-for i in range(3):
-    s1 = f'{b} * {a} = {a * b if sum_ch(a*b) != 6 else ':=)'}'
-    s2 = f'{b} * {a + 1} = {(a+1) * b if sum_ch((a+1)*b) != 6 else ':=)'}'
-    s3 = f'{b} * {(a+2)} = {(a+2) * b if sum_ch((a+2)*b) != 6 else ':=)'}'
-    print(s1, s2, s3, sep=' ')
-    b += 1
+i = 0
+while i < 3:
+    j = 0
+    while j < 3:
+        if (sum_ch((a+i) * (a + j)) == 6):
+            s = ':=)'
+        else:
+            s = (a + i) * (a +j)
+        print(a + i, ' * ', a + j, ' = ', s, sep = '', end = ' ')
+        j += 1
+    print()
+    i +=1
