@@ -1,0 +1,5 @@
+:hard x y v pop x*y-v+pop
+hard 1 3 123 0
+hard 6 90 0 3
+hard 123 567 234 6789
+quit "{}, {}"
