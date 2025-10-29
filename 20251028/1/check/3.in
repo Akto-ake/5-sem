@@ -1,0 +1,20 @@
+a, b, c, d = Omnibus(), Omnibus(), Omnibus(), Omnibus()
+del a.random
+del a.random
+del a.random
+del a.random
+del a.random
+del a.random
+a.i = a.j = a.k = True
+b.j = b.k = b.n = False
+c.k = c.n = c.m = hex
+d.bb = d.xx = d.pp = d.oo = True
+print(a.i, a.j, a.k, b.j, b.k, b.n, c.k, c.n, c.m, d.oo)
+
+del a.k, b.n, c.m, d.pp
+del a.k, b.n, c.m
+del a.k, b.n, c.m
+del a.i, b.j, c.n
+print(a.j, b.k, c.k, d.oo)
+del a.k, c.m, d.xx, d.pp
+print(a.j, b.k, d.oo)
