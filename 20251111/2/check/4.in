@@ -1,0 +1,19 @@
+class C:
+    num = Num()
+
+class D:
+    k = Num()
+
+print(C().num)
+c, d = C(), C()
+c.num = d.num = 2
+
+print(D().k)
+z, b = D(), D()
+z.k = b.k = 1
+
+print(c.num+z.k)
+c.num = ""
+print(b.k+d.num)
+d.num = range(10, 10, 1)
+print(c.num+d.num)
