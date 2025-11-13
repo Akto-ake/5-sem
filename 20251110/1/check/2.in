@@ -1,0 +1,6 @@
+a = DivStr("XcDfQWEasdERTdfgRTY")
+b = DivStr("")
+print(* a % 10 % 4 % 3)
+print(a.lower() % 3)
+print(* a % 10 % 3)
+print(a % 5 + DivStr() + a % 6 + b)

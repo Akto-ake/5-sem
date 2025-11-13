@@ -1,0 +1,6 @@
+a = DivStr("XcDfQWEasdERTdfgRTY")
+b = DivStr("")
+c = DivStr("ASDFGHJKLWERTYUIOZXCVBNM")
+print(b % 10 % 4 % 3)
+print(* c // len(a))
+print(* c // 7)
