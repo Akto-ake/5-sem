@@ -1,0 +1,19 @@
+wo = Vowel(y=22, a=12, i=3)
+try:
+    print(wo.o)
+except AttributeError:
+    print("ups, not exist")
+
+print(wo, wo.full, wo.answer)
+wo.e = wo.o = wo.u = 17
+print(wo, wo.full)
+wo.full = 10
+try:
+    print(wo.oopopoppopopo)
+except AttributeError:
+    print("ups, slot not exist")
+print(wo, wo.full)
+try:
+    wo.answer = 90
+except AttributeError:
+    print("ups")

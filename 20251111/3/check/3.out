@@ -1,0 +1,6 @@
+ups, not exist
+a: 12, i: 3, y: 22 False 42
+a: 12, e: 17, i: 3, o: 17, u: 17, y: 22 True
+ups, slot not exist
+a: 12, e: 17, i: 3, o: 17, u: 17, y: 22 True
+ups

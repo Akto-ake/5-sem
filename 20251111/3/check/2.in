@@ -1,0 +1,10 @@
+wo = Vowel(y=22, a=12, i=3)
+print(wo, wo.full, wo.answer)
+wo.e = wo.o = wo.u = 100500
+print(wo, wo.full)
+wo.full = 12
+print(wo, wo.full)
+try:
+    wo.answer = 90
+except AttributeError:
+    print("ups")
