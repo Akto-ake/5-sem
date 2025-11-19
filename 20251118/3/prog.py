@@ -3,7 +3,7 @@ import sys, struct
 s_in = sys.stdin.buffer.read()
 
 if len(s_in) < 44:
-    print('NO here')
+    print('NO')
     exit()
 elif s_in[0:4] != b"RIFF" or \
         s_in[8:12] != b"WAVE" or \
