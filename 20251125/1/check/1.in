@@ -1,0 +1,21 @@
+class C(metaclass=dump):
+    def __init__(self, val):
+        self.val = val
+
+    def add(self, other, another=None):
+        return self.val + other + (another or self.val)
+
+class Q(metaclass=dump):
+    a: int = 1
+    b: float = 42.0
+
+    def __init__(self, ppp = 0):
+        self.a = ppp
+    def __repr__(self):
+        return "parem" + str(self.a)
+
+c = C(10)
+print(c.add(9))
+print(c.add(9, another=10))
+
+print(Q(), Q(111))

@@ -1,0 +1,10 @@
+class D(metaclass=dump):
+    def __len__(self):
+        b = "dd" + "\n"
+        return 2
+    def __repr__(self):
+        return "D()"
+
+d = D()
+print(d) 
+

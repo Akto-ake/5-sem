@@ -1,0 +1,13 @@
+class E(metaclass=dump):
+    width = depth = 0
+    def __init__(self, d = 'qq'):
+        self.width = self.depth = d
+        return 
+    def __del__(self):
+        return 2
+    def __repr__(self):
+        return "hehehehehehehe"
+
+print(E("qqqqqqq"))
+e = E()
+print(e)
