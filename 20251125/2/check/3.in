@@ -1,0 +1,10 @@
+dontdontdont
+store 9 ad        
+store 10 bed
+store 5 night
+mul ad night me
+add bed night hapiness
+out hapiness
+ifge bed ad lo
+stop
+lo: out night
